@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type ="img/png" size="192x192" href="img/favicon_io/android-chrome-192x192.png">  
+    <link rel="icon" type ="img/png" size="512x512" href="img/favicon_io/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maps.googleapis.com/maps/api/js"> 
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=geometry,places&callback=initMap">
+</script>
+    <script src="script.js" defer></script>
+    <title>Além do Bolo</title>
+</head>
+<body>
+    <header id="menu">
+        <div>
+            <img src="img/aleatorias/logo.svg" class="imgwrapper" alt="Logotipo Além do Bolo">
+        </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label id="label" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false" for="check">&#x268c; 
+            </label>
+         <ul class="list-header">
+             <li><a href="">Home</a></li>
+             <li><a href="#galeria">Galeria</a></li>
+             <li><a href="#historia">História</a></li>
+             <li><a href="#contato">Contato</a></li>
+         </ul>
+        </nav>
+    </header>
+
+    <main class="content-banner" id="content-banner">
+        <img src="img/aleatorias/banner.jpg" class="img-banner" alt="mãos do garçom segurando bandeja metalizada de aperitivos">
+       <div class="texto-banner">
+        <h1>Além do Bolo</h1>
+        <p>De pequenas reuniões a grandes eventos, 
+            o melhor buffet para fazer seus momentos inesquecíveis!
+        </p>
+        <p>Procurando por um experiência de alta qualidade para seu próximo evento? 
+            Nossa empresa oferece buffets personalizados e deliciosos para qualquer ocasião. 
+            Entre em contato conosco agora mesmo para mais informações!
+        </p>
+        <button class="contact-button" >Contato</button>
+       </div>
+        
+    </main>
+
+    <div id="galeria" class="carrossel">
+        <button id="prevbutton"><img src="img/button/tras.svg" alt="prev button"></button>
+        <div class="containergallery" id="gallery">
+            <img class="imgGallery on" src="img/carrossel/1.jpg" alt="mesa de festa decorada com flores, toalhas sobrepostas e um banquete sobre ela" >
+            <img class="imgGallery" src="img/carrossel/2.jpg" alt="garçons durante evento servindo champagne e aperitivos" >
+            <img class="imgGallery" src="img/carrossel/3.jpg" alt="travessa de louça branca com pãeszinhos de tapioca" >
+            <img class="imgGallery" src="img/carrossel/4.jpg" alt="bowl de batatas apimentadas ao lado de decoração" >
+            <img class="imgGallery" src="img/carrossel/5.jpg" alt="mesa temática de halloween com velas, sobremesas em caldeirões e comidas temáticas" >
+        </div>
+        <button id="nextbutton"><img src="img/button/frente.svg" alt="next button"></button>
+    </div>
+
+    <section id="historia">
+       <section id="chef-cris">
+         <div class="chef-image">
+             <img  src="img/aleatorias/chefe1.jpg" width="250px" height="250px" alt="Chefe de cozinha Cristianne Riccioppo">
+         </div>   
+         <h2>
+             Cristianne Riccioppo
+         </h2>    
+         <p>
+             Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+             Necessitatibus, asperiores placeat? Eius sint, 
+             soluta magnam corrupti ipsum voluptatibus fugiat officia asperiores odio temporibus in commodi at quia et, 
+             omnis aperiam?
+         </p>
+       </section> 
+ 
+       <section id="chef-fabi">
+         <div class="chef-image">
+             <img src="img/aleatorias/chefe2.jpg"  width="250px" height="250px" alt="Chefe de cozinha Fabiani Norões">
+         </div>
+         <h2>
+             Fabiani Norões
+         </h2>
+         <p>
+             Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+             Quaerat labore pariatur a, odit delectus odio. Voluptas, similique maxime porro sint amet laboriosam quam,
+             animi officiis corporis, accusamus aperiam cum? Reiciendis?
+         </p>
+       </section>
+    </section>
+
+    <div class="videoContainer">
+        <video width="100%" height="50%" src="video/video.mp4" class="" controls>
+        </video>
+    </div>
+
+    <div id="contato" class="mapaEform">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d876.179014810386!2d-43.26315720428553!3d-22.848585113468953!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997befe13430df%3A0x3f7b5ced07158885!2sal%C3%A9m%20do%20bolo!5e0!3m2!1spt-BR!2sbr!4v1677100804207!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="map" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form>
+            <h3>ENTRAR EM CONTATO</h3>
+            <div>
+                <div class="inputform" >
+                    <span><i class="fa-regular fa-user"></i></span>
+                    <input type="text" placeholder="Nome">
+                </div>
+
+                <div class="inputform" >
+                    <span><i class="fa-regular fa-at"></i></span>
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="inputform" >
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    <input type="number" placeholder="Telefone">
+                </div>
+                
+                <div class="inputform">
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                    <input id="inputmsg" type="text" placeholder="Mensagem">
+                </div>
+            </div>
+            <button>ENVIAR</button>
+        </form>
+    </div>
+
+    <footer>
+        <ul class="list-footer">
+            <li><a href="https://www.instagram.com/buffetalemdobolo/?hl=pt" target=”_blank” rel=”noopener”>
+                <i class="fa-brands fa-instagram" alt="Instagram"></i>
+             </a>
+            </li>
+            <li><a href="https://pt-br.facebook.com/buffetalemdobolo" target=”_blank” rel=”noopener” alt="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+             </a>
+            </li>
+            <li><a href="https://wa.me/5521964723457" target=”_blank” rel=”noopener”>
+                <i class="fa-brands fa-whatsapp" alt="fa-whatsapp"></i>
+             </a>
+            </li>
+            <li><a href="https://www.instagram.com/leoriccioppo/" id="assinatura">Criado por:Leonora Riccioppo</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

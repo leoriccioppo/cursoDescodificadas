@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Didact+Gothic&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    display: block;
+    background-color: #000000;
+}
+
+header{
+    background-color: #000000;
+    
+}
+img, div {
+    user-select: none;
+}
+
+
+section {
+    display:flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+    max-height: 100vh;
+    
+}
+
+.img-banner {
+    width: 100%;
+    height: max(100vh);
+    opacity: 0.5;
+    position: relative;
+}
+
+.texto-banner{
+    color: white;
+    position: absolute;
+    margin:10%;   
+    font-weight: 300;
+    text-shadow: .3rem .5rem 2px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+.texto-banner h1{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 5rem;
+
+}
+
+.texto-banner p{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 2rem;
+}
+
+.content-banner button{
+    font-family: 'Comfortaa', cursive;
+    text-transform: lowercase;
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, hsl(0, 1%, 14%) #000000);  
+    background: linear-gradient(to right, hsl(0, 1%, 14%), #000000); 
+    color:white;
+    border-radius: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.carrossel {
+    box-shadow: 2px 2px 4px rgb(40, 38, 38);
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color:#000000;
+}
+
+.containergallery{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.imgGallery{
+    opacity: 0;
+    transition: opacity .2s;
+    width: 100%;
+    height: 80vh;
+    border-radius: 10px;
+    position: absolute;
+
+}
+
+.on{
+    opacity: 1;
+}
+
+
+#prevbutton, #nextbutton {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#prevbutton img, #nextbutton img {
+    width: 100%;
+    height: 100%;
+}
+
+#chef-cris {
+    background-color:hsl(360, 11%, 0%, 1);
+    color:hsl(360, 100%, 100%, 0.92);
+    
+}
+
+#chef-fabi{
+    background-color:hsl(360, 11%, 0%, 1);
+    color:hsl(360, 100%, 100%, 0.92);
+    
+    
+
+}
+
+
+section h2 p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 250;
+    
+}
+
+section h2{
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 0.20px;
+    font-weight: 250;
+
+}
+
+.videoContainer{
+    width: 100%;
+    justify-content: center;
+}
+
+.mapaEform {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background-color: #000000;
+}
+
+form{
+    padding: 2rem;
+    width: 50rem;
+    height: auto;
+}
+
+form h3{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.mapaEform .map{
+    width: 100%;
+    flex: 1.45rem;
+    object-fit: cover;
+}
+
+.mapaEform form span{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.inputform{
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 1rem;
+    background-color: #000000;
+}
+
+.inputform input{
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #000000;
+    color: white;
+}
+
+form button{
+    margin-top: 2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    text-transform: lowercase;
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, hsl(0, 1%, 14%) #000000);  
+    background: linear-gradient(to right, hsl(0, 1%, 14%), #000000); 
+    color:white;
+    border-radius: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+footer{
+    background-color: white;
+    padding: 1rem 1rem;
+    font-family: 'Comfortaa', cursive;
+    
+}
+
+footer ul li{
+    background-color: white;
+    justify-content: flex-end;
+    position:relative;
+    border: 20px;
+}
+
+#assinatura {
+    color: #fd0786;
+    text-shadow: 1px 1px 2px
+    
+}
+
+.list-footer{
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 1rem;
+    list-style: none;
+}
+
+.list-footer a{
+    color:black;
+}
+
+
+
+
+
+/*tela horizontal */
+
+@media (min-width: 601px){
+    #check {
+        display:none;
+    }
+
+    #menu {
+        width: 100%;
+        height: 132px;
+        gap: min(10%, 50vw);
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        background-color: black;
+        border-color: black;
+        font-family: 'Comfortaa', cursive;
+        font-weight: 250;
+        text-decoration: none;
+        user-select: none;  
+    }
+    
+    nav {
+        width: 100%;
+    }
+
+    
+
+    .list-header{
+        display: flex;
+        background-color: black;
+        flex-wrap: nowrap;
+        list-style: none;
+        gap: 5%;
+        justify-content: space-around;
+    }
+
+    .list-header a{
+        color: white;
+    }
+    
+    #chef-cris, #chef-fabi{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #chef-cris h2{
+        width:100vh;
+
+    }
+    
+
+}
+
+
+   /*tela vertical*/
+
+@media (max-width: 600px){
+
+    #check {
+        display:none;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        user-select: none;
+    
+    }
+
+        
+
+    label {
+        font-size: 3rem;
+        color: whitesmoke;
+        gap: 50px;
+        
+    }
+    
+    .list-header{
+        background-color: #000000;
+        height: 100vh;
+        position: fixed;
+        right: -100%;
+        padding: 20px;
+
+    }
+    
+
+    .list-header a{
+        text-decoration: none;
+        color: white;
+       
+    }
+
+   #check:checked ~ ul {
+        background-color: rgba(0, 0, 0, 0.80);
+        right: 0;
+        position: fixed;
+        z-index: 5;
+        font-family: 'Comfortaa', cursive;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+
+
+    
+    header div nav label {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        
+    }
+    
+    #menu {
+        position: fixed;
+        width:100%;
+        height: 128px;
+        z-index: 1000;
+    }
+    
+    #menu a{
+        border-bottom: 2px solid #434343
+    }
+
+    .content-banner{
+        padding-top: 128px;
+    }
+    
+    .texto-banner{
+        margin: 2%;
+    }
+
+    section{
+        display: flex;
+        align-items: center;
+    }
+
+    section div{
+        display: flex;
+
+    }
+
+    .carrossel{
+        height: 60vh;
+    }
+
+    .carrossel #gallery img{
+        height: 50vh;
+    }
+
+    #chef-cris div img{
+        position: relative;
+        
+    
+    }
+
+    #chef-fabi div img {
+        position: relative;
+        
+    }
+
+
+}
