@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    background-image: url('./img/back.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 2% 4%;
+
+  }
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2em;
+    width: 90%;
+    padding: 3.75%;
+    margin: 0 0 3.75%;
+    border-radius: 30px;
+    color: white;
+    font-family: 'Shantell Sans', cursiva;
+    
+  }
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+  min-width: 90%;
+  margin: 0 auto;
+
+
+}
+
+.card{
+  aspect-ratio: 3/4;
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+  transition: all 400ms ease-in;
+  transform-style: preserve-3d;
+}
+
+.face{
+width: 100%;
+height: 100%;
+position: absolute;
+background-size: cover;
+background-position: center;
+border-radius: 8px;
+border: 2px solid rgba(241, 182, 242, 0.8);
+transition: all 400ms ease;
+
+}
+
+.front{
+  transform: rotateY(180deg);
+}
+
+.back{
+background-image: url('./img/castle.jpg');
+backface-visibility: hidden;
+
+}
+
+.reveal-card{
+  transform: rotateY(180deg);
+}
+
+.disabled-card{
+filter: blur(30px);
+filter: saturate(0.2);
+border: 2px solid rgb(241, 182, 242);
+
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: #000;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: 'Shantell Sans', cursiva;
+}
+
+button:active{
+  color:  rgb(241, 182, 242);
+}
+
+@media screen and (max-width:920px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
