@@ -6,17 +6,17 @@ const characters = [
     'Anna',
     'Ariel',
     'Aurora',
-    //'Bella',
-   // 'Branca',
-   // 'Cinderella',
-   // 'Elsa',
-    //'Jasmine',
-   // 'Merida',
-   // 'Moana',
-   // 'Mulan',
-   // 'Pocahontas',  
-   // 'Rapunzel',
-  //  'Tiana',
+    'Bella',
+    'Branca',
+    'Cinderella',
+    'Elsa',
+    'Jasmine',
+    'Merida',
+    'Moana',
+    'Mulan',
+    'Pocahontas',  
+    'Rapunzel',
+    'Tiana'
 ];
 
 //Criando os elementos HTML para receber tipo e classe
@@ -30,13 +30,18 @@ return element;
 
 let firstCard = '';
 let secondCard = '';
+let timerIntervalId = null;
 
 const checkEndGame = () =>{
     const disabledCards = document.querySelectorAll('.disabled-card');
-    if (disabledCards.length == 3) {
+    if (disabledCards.length === 28) {
+        clearInterval(timerIntervalId);
+        setTimeout(() => { 
         alert(`Você conseguiu e levou ${timer.innerHTML} segundos!`);
+        window.location.reload(); // reinicia a página
+        }, 600);
     }
-}
+};
 //checagem cartas
 const checkCards = () => {
     const firstCharacter = firstCard.getAttribute('data-character');
@@ -56,7 +61,9 @@ const checkCards = () => {
         }, 600);      
     }
 
-}
+    checkEndGame();
+
+};
 
 //virada da carta 
 const revealCard = ({ target }) =>{  
@@ -65,17 +72,17 @@ const revealCard = ({ target }) =>{
     return;
     }
 
-  if (firstCard == ''){
+  if (firstCard === ''){
      target.parentNode.classList.add('reveal-card');
      firstCard = target.parentNode;
-    } else if(secondCard == ''){
+    } else if(secondCard === ''){
      target.parentNode.classList.add('reveal-card');
      secondCard = target.parentNode;
 
      checkCards();
     }
 
-}
+};
 
 //cria o card com as classes atribuidas +foto de cada princesa do array
 const createCard = (character) =>{
