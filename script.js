@@ -6,17 +6,17 @@ const characters = [
     'Anna',
     'Ariel',
     'Aurora',
-    'Bella',
-    'Branca',
-    'Cinderella',
-    'Elsa',
-    'Jasmine',
-    'Merida',
-    'Moana',
-    'Mulan',
-    'Pocahontas',  
-    'Rapunzel',
-    'Tiana',
+    //'Bella',
+   // 'Branca',
+   // 'Cinderella',
+   // 'Elsa',
+    //'Jasmine',
+   // 'Merida',
+   // 'Moana',
+   // 'Mulan',
+   // 'Pocahontas',  
+   // 'Rapunzel',
+  //  'Tiana',
 ];
 
 //Criando os elementos HTML para receber tipo e classe
@@ -30,10 +30,10 @@ return element;
 
 let firstCard = '';
 let secondCard = '';
+
 const checkEndGame = () =>{
     const disabledCards = document.querySelectorAll('.disabled-card');
-    if (disabledCards.length == 28) {
-        clearInterval(this.loop)
+    if (disabledCards.length == 3) {
         alert(`Você conseguiu e levou ${timer.innerHTML} segundos!`);
     }
 }
@@ -95,7 +95,7 @@ const createCard = (character) =>{
 }
 const startTimer = () => {
 
-    this.loop = setInterval(() => {
+    setInterval(() => {
       const currentTime = +timer.innerHTML;
       timer.innerHTML = currentTime + 1;
     }, 1000);
@@ -105,7 +105,8 @@ btn.addEventListener('click', () => {
     startTimer();
     loadGame();
   })
-//Funcionamento do jogo, responsavel duplicar cards e começar jogo
+
+//Funcionamento do jogo, responsavel duplicar e aleatoriar cards
 const loadGame = () => {
    const duplicateCharacters = [...characters, ...characters];
    
