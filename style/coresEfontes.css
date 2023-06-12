@@ -1,9 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Patua+One&family=Roboto+Slab&display=swap');
+
+
 /* cores.css */
 
 :root {
-    --cor-primaria: #ff0000;
-    --cor-secundaria: #00ff00;
-    --cor-destaque: #0000ff;
+    --cor-branco: #FFFFFF;
+    --cor-preto: #000000;
+    --cor-cinza: #CECECE;
+    --cor-darkcinza: #B8BEBF;
+    --cor-pride: linear-gradient(to bottom right, #acdef2, #f3c7e9, #f1b3d5);
+    --cor-azul: #A7E4F2;
+    --cor-rosa: #F2BBDF; 
+    --cor-roxo: #BAB0DD;
+    --cor-darkrosa: #D979AE;
+    --cor-darkazul: #62C5DE;
+    --cor-darkroxo: #A9B0D9;
+    --cor-lightroxo: #E4E9F2;
+
   }
 
 

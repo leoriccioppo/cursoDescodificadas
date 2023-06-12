@@ -1,4 +1,55 @@
-h1{
+ body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--cor-lightroxo);
+
+ }
+
+.topo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10%;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.4em;
+    width: 80%;
+    height: 40vh;
+    justify-content: center;
+    background: var(--cor-pride);
     font-family: var(--fonte-paragrafo);
-    color: var(--cor-primaria);
+    font-size: 1.8rem;
+    line-height: 2.0rem;
+    color: var(--cor-darkcinza);
+    
+}
+
+
+ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    text-decoration: none;
+  }
+  
+
+
+ h1{
+    font-family: var(--fonte-titulo);
+    color: var(--cor-darkrosa);
+    font-size: 3em;
+}
+
+h2{
+    font-family: var(--fonte-paragrafo);
+    color: var(--cor-rosa);
 }
