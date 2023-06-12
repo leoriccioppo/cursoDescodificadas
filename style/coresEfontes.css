@@ -1,0 +1,18 @@
+/* cores.css */
+
+:root {
+    --cor-primaria: #ff0000;
+    --cor-secundaria: #00ff00;
+    --cor-destaque: #0000ff;
+  }
+
+
+
+  /* fontes.css */
+
+  :root {
+    --fonte-titulo: 'Patua One', cursive;
+    --fonte-subtitulo: 'Open Sans', sans-serif;
+    --fonte-paragrafo: 'Roboto Slab', serif;
+  }
+
