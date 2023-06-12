@@ -48,7 +48,7 @@ label {
   button {
     margin-top: 10px;
     padding: 8px 16px;
-    background-color: var(--cor-darkroxo);
+    background: var(--cor-pride);
     color: white;
     border: none;
     border-radius: 3px;

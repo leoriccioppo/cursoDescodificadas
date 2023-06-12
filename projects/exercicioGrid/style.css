@@ -22,7 +22,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.5);
+    background: var(--cor-pride);
     font-size: 1.2em;
     width: 100%;
     max-width: 800px;
@@ -30,7 +30,8 @@ header {
     margin: 0 0 3.75%;
     border-radius: 30px;
     color: white;
-    font-family: 'Shantell Sans', cursiva;
+    font-family: var(--fonte-titulo);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     
   }
 
@@ -59,7 +60,7 @@ position: absolute;
 background-size: cover;
 background-position: center;
 border-radius: 8px;
-border: 2px solid rgba(241, 182, 242, 0.8);
+border: 2px solid var(--cor-rosa);
 transition: all 400ms ease;
 
 }
@@ -81,22 +82,20 @@ backface-visibility: hidden;
 .disabled-card{
 filter: blur(30px);
 filter: saturate(0.2);
-border: 2px solid rgb(241, 182, 242);
+border: 2px solid var(--cor-rosa);
 
 }
 
 button {
   background-color: transparent;
   border: 2px solid transparent;
-  color: #000;
-  color: white;
-  font-weight: bold;
+  color:var(--cor-branco);
   font-size: 1.2em;
-  font-family: 'Shantell Sans', cursiva;
+  font-family: var(--fonte-subtitulo);
 }
 
 button:active{
-  color:  rgb(241, 182, 242);
+  color:  var(--cor-rosa);
 }
 
 @media screen and (max-width:920px) {

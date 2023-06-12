@@ -1,3 +1,27 @@
+html, body{
+    background: var(--cor-lightroxo);
+    font-family: var(--fonte-paragrafo);
+    height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:auto;
+}
+
+
+h1{
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    color: var(--cor-darkrosa);
+    
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -5,6 +29,17 @@
     align-items: center;
     max-height: 60%;
     max-width: 60%;
-    margin: auto
-  
+    padding: 1.6rem 0;
     }
+
+    button {
+        margin-top: 10px;
+        padding: 0.8rem 1.6rem;
+        background: var(--cor-pride);
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-family: var(--fonte-subtitulo);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
