@@ -1,10 +1,10 @@
  body{
+    height: 100vh;
+    max-width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: var(--cor-lightroxo);
-    margin: auto;
-
  }
 
 .topo{
@@ -13,41 +13,46 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-top: 10%;
-
+    margin:2.0em 0;
 }
 
-main{
+nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1.4em;
-    width: 80%;
+    width: 86%;
     height: 40vh;
     justify-content: center;
+    font-size: 1.6rem;
+    margin:2.0em auto;   
     background: var(--cor-pride);
-    font-family: var(--fonte-paragrafo);
-    font-size: 1.8rem;
-    line-height: 2.0rem;
-    color: var(--cor-darkcinza);
-    
 }
 
-
-ul {
-    list-style-type: none;
-  }
-  
-  ul li {
+   ul, li, a {
     text-decoration: none;
+    list-style-type: none;
+    color: var(--cor-branco);
+    font-family: var(--fonte-subtitulo);
   }
   
+  ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+   
+    
+}
+  
+ 
 
 
  h1{
     font-family: var(--fonte-titulo);
     color: var(--cor-darkrosa);
-    font-size: 3em;
+    font-size: 2.8rem;
 }
 
 h2{

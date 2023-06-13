@@ -23,7 +23,7 @@ h1{
 #tabela{
     overflow-x: auto;
     width: 80%;
-    background-color: var(--cor-darkcinza);
+    background: var(--cor-pride);
 }
 
 td span{
