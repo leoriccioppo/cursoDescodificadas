@@ -32,7 +32,7 @@ td span{
     
 }
 td{
-    color: white;
+    color: var(--cor-preto);
     border-radius: 6px;
     text-align: center;   
 }
@@ -61,39 +61,39 @@ td{
     border:none;
 }
 .MetaisAlcalinos{
-    background-color: #BF0426;
+    background-color: #F28A80;
  }
  
 .MetaisAlcalinoterrosos{
-    background-color: #ffa500;
+    background-color: #D9BD89;
 
 }
 
 .MetaisDeTransicao{
-    background-color: #03A6A6;
+    background-color: #859F94;
 }
 
 .MetaisPosTransicao{
-    background-color: #700170;
+    background-color: #8A4B5E;
 }
 
 .Semimetais{
-    background-color: #dab850;
+    background-color: #A1C9C9;
 
  }
 
  .NaoMetaisPoliatomicos{
-    background-color: #D97904;
+    background-color: #8B5795;
  }
  
 
  .NaoMetaisDiatomicos{
-    background-color: #ff4500;
+    background-color: #B3832F;
 
  }
 
  .GasesNobres{
-    background-color: #ffc0cb;
+    background-color: #47996B;
 
  }
 
@@ -103,12 +103,12 @@ td{
  }
 
  .Lantanideos{
-    background-color: #D94AA7;
+    background-color: #CFBE54;
 
  }
 
  .Actinideos{
-    background-color: #8a2be2;
+    background-color: #C6ABB0;
 
  }
 
