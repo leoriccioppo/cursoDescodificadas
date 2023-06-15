@@ -20,12 +20,15 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 86%;
-    height: 40vh;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     font-size: 1.6rem;
     margin:2.0em auto;   
-    background: var(--cor-pride);
+    background-image: var(--svg-background);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
    ul, li, a {
