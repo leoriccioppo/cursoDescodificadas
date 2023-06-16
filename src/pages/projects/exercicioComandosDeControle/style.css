@@ -22,6 +22,11 @@ h1{
     
 }
 
+label{
+    color:white;
+    font-size: 1.6rem;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -35,11 +40,14 @@ h1{
     button {
         margin-top: 10px;
         padding: 0.8rem 1.6rem;
-        background: var(--cor-pride);
         color: white;
+        font-size: 1.2rem;
         border: none;
         border-radius: 3px;
         cursor: pointer;
-        font-family: var(--fonte-subtitulo);
+        background-image: var(--svg-background);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
       }
