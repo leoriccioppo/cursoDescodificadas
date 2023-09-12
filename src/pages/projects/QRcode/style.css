@@ -1,0 +1,54 @@
+/* Reset de estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos gerais */
+  body {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que a página ocupe toda a altura da viewport */
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px; 
+  }
+  
+  .card {
+    max-width: 300px;
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .QRimage {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+  }
+  
+  .text {
+    margin-top: 20px;
+  }
+  
+  h1 {
+    color: hsl(218, 44%, 22%); /* Azul escuro para o título h1 */
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  p {
+    color: hsl(220, 15%, 55%);
+    font-weight: 400;
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .card {
+      max-width: 800px;
+      height: 400px;
+    }
+}
